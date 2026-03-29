@@ -4,8 +4,6 @@
 #include <vector>
 #include <iostream>
 
-#include <intrin.h> // Required for MSVC intrinsics
-
 // Cross-compiler wrapper for Trailing Zero Count
 inline int count_trailing_zeros64(uint64_t val) {
 #if defined(_MSC_VER)
