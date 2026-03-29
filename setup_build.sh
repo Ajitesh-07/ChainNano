@@ -81,8 +81,8 @@ log "CUDA architecture: sm_${CUDA_ARCH}"
 # =============================================================================
 log "Installing build tools..."
 
-apt-get update -qq
-apt-get install -y -qq \
+sudo apt-get update -qq
+sudo apt-get install -y -qq \
     cmake           \
     ninja-build     \
     build-essential \
@@ -124,7 +124,7 @@ if [ -d "$LIBTORCH_DIR" ] && [ -f "$LIBTORCH_DIR/build-version" ]; then
 fi
 
 if [ ! -d "$LIBTORCH_DIR" ]; then
-    LIBTORCH_URL="https://download.pytorch.org/libtorch/cu${CUDA_TAG}/libtorch-cxx11-abi-shared-with-deps-${PYTORCH_VERSION}%2Bcu${CUDA_TAG}.zip"
+    LIBTORCH_URL="https://download.pytorch.org/libtorch/cu130/libtorch-shared-with-deps-2.11.0%2Bcu130.zip"
 
     log "Downloading LibTorch ${PYTORCH_VERSION}+cu${CUDA_TAG}..."
     log "URL: $LIBTORCH_URL"
