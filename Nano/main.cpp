@@ -26,7 +26,7 @@
 // Chain Reaction Includes
 #include "Gumbel_MCTS.hpp"
 #include "cr_tensor.hpp"
-#include "chainreaction.h"
+#include "ChainReaction.h"
 #include "InferenceQueue.h"
 
 // --- Helper: Save Game Tensors to Disk ---
