@@ -1,6 +1,6 @@
 #pragma once
 #include <torch/torch.h>
-#include "chainreaction.h"
+#include "ChainReaction.h"
 #include <ATen/core/TensorBody.h>
 #include <torch/types.h>
 #include <torch/csrc/autograd/generated/variable_factories.h>
