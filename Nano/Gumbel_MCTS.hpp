@@ -11,7 +11,7 @@
 #include <ATen/core/TensorBody.h>
 
 // Replaced chess.hpp with our Chain Reaction engine
-#include "chainreaction.h"
+#include "ChainReaction.h"
 #include "InferenceQueue.h"
 #include <iomanip>
 #include <ios>
